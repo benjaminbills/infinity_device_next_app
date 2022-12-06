@@ -59,38 +59,31 @@ const Contact = () => {
   };
   const sendEmail = (e: any) => {
     e.preventDefault();
-    console.log(form);
-    Swal.fire(
-      'Message sent',
-      'You have successful sent your message',
-      'success'
-    );
-    e.target.reset();
-    // emailjs
-    //   .sendForm(
-    //     `${process.env.NEXT_PRIVATE_EMAIL_SERVICE_KEY}`,
-    //     `${process.env.NEXT_PRIVATE_EMAIL_TEMPLATE_ID}`,
-    //     form?.current,
-    //     `${process.env.NEXT_PRIVATE_EMAIL_PUBLIC_KEY}`
-    //   )
-    //   .then(
-    //     (result) => {
-    //       Swal.fire(
-    //         'Message sent',
-    //         'You have successful sent your message',
-    //         'success'
-    //       );
-    //       e.target.reset();
-    //     },
-    //     (error) => {
-    //       Swal.fire({
-    //         title: 'Error!',
-    //         text: 'Something went wrong. Please try again or call us',
-    //         icon: 'error',
-    //         confirmButtonText: 'Cool',
-    //       });
-    //     }
-    //   );
+    emailjs
+      .sendForm(
+        `${process.env.NEXT_PUBLIC_EMAIL_SERVICE_KEY}`,
+        `${process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID}`,
+        form.current,
+        `${process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY}`
+      )
+      .then(
+        (result) => {
+          Swal.fire(
+            'Message sent',
+            'You have successful sent your message',
+            'success'
+          );
+          e.target.reset();
+        },
+        (error) => {
+          Swal.fire({
+            title: 'Error!',
+            text: 'Something went wrong. Please try again or call us',
+            icon: 'error',
+            confirmButtonText: 'Cool',
+          });
+        }
+      );
   };
   return (
     <Container maxW='container.xl'>
