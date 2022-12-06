@@ -15,6 +15,7 @@ import Products from '../Products';
 import Clip from '../assets/images/clip.jpeg';
 import { ArrowForwardIcon } from '@chakra-ui/icons';
 import Link from 'next/link';
+import Head from 'next/head';
 function Catalog() {
   const downloadCatalog = () => {
     fetch(
@@ -32,6 +33,9 @@ function Catalog() {
   };
   return (
     <Container maxW='container.xl'>
+      <Head>
+        <title>Infinity Devices | Medical Devices | Catalog</title>
+      </Head>
       <Box>
         <Box pt='5' pb='10'>
           <Center>

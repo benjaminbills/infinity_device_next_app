@@ -18,10 +18,14 @@ import { IoDiamondOutline } from 'react-icons/io5';
 import { ImLink } from 'react-icons/im';
 import { BiAnchor } from 'react-icons/bi';
 import { TiSpiral } from 'react-icons/ti';
+import Head from 'next/head';
 // import Image from 'next/image';
 const About = () => {
   return (
     <Container maxW='container.xl' pb={'10'}>
+      <Head>
+        <title>Infinity Devices | Medical Devices</title>
+      </Head>
       <Box pt='5'>
         <Center>
           <Text fontSize={['2xl', '3xl']} as={'h1'}>

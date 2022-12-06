@@ -17,6 +17,7 @@ import { FiPhoneCall } from 'react-icons/fi';
 import { MdOutlineEmail } from 'react-icons/md';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
+import Head from 'next/head';
 // import { Keys } from '../keys';
 
 type FormInterface = {
@@ -87,6 +88,9 @@ const Contact = () => {
   };
   return (
     <Container maxW='container.xl'>
+      <Head>
+        <title>Infinity Devices | Contact</title>
+      </Head>
       <Box pt='5' pb='10'>
         <Center pb={'5'}>
           <Text fontSize={['2xl', '3xl']} as={'h1'}>

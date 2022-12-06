@@ -27,6 +27,7 @@ import hocer from '../assets/images/hocerlogo.png';
 // import Hocer from '../assets/images/hocer2.jpeg';
 import { ArrowForwardIcon, PhoneIcon } from '@chakra-ui/icons';
 import { Carousel } from 'react-responsive-carousel';
+import Head from 'next/head';
 
 const Home = () => {
   const [imageIndex, setImageIndex] = useState(0);
@@ -59,6 +60,9 @@ const Home = () => {
   };
   return (
     <Box pb={'5'}>
+      <Head>
+        <title>Infinity Devices | Medical Devices</title>
+      </Head>
       {/* <Carousel
         autoPlay={true}
         showThumbs={false}

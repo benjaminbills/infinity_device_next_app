@@ -16,6 +16,7 @@ import Link from 'next/link';
 import Products from '../Products';
 import NextImage from 'next/image';
 import { useRouter } from 'next/router';
+import Head from 'next/head';
 
 interface ProductInterface {
   id: string;
@@ -54,6 +55,9 @@ const SingleProduct = (pid: any) => {
   console.log(product);
   return (
     <Box pb={'10'}>
+      <Head>
+        <title>Infinity Devices | {product?.title}</title>
+      </Head>
       {product ? (
         <Container maxW='container.xl'>
           <Stack pt='10' w='100%' pb={'5'} flexDir={['column', 'row', 'row']}>
