@@ -1,4 +1,5 @@
 import { Box } from '@chakra-ui/react';
+import Footer from './Footer';
 import Navbar from './Nav';
 
 type Props = {
@@ -10,6 +11,7 @@ const Page = ({ children }: Props) => {
     <div>
       <Navbar />
       <Box pt={'14'}>{children}</Box>
+      <Footer />
     </div>
   );
 };

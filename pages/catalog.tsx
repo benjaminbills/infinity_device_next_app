@@ -1,5 +1,7 @@
+import Catalog from '../component/Catalog';
+
 const catalog = () => {
-  return <div>catalog</div>;
+  return <Catalog />;
 };
 
 export default catalog;

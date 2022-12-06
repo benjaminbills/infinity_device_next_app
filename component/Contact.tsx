@@ -11,7 +11,7 @@ import {
   Text,
   Textarea,
 } from '@chakra-ui/react';
-import React, { useRef, useState } from 'react';
+import React, { SyntheticEvent, useRef, useState } from 'react';
 import { GoLocation } from 'react-icons/go';
 import { FiPhoneCall } from 'react-icons/fi';
 import { MdOutlineEmail } from 'react-icons/md';
