@@ -122,15 +122,7 @@ function Navbar() {
                         rel='noreferrer'
                         href={'https://fenghmedical.nl/'}
                       >
-                        <Text
-                          px={2}
-                          py={1}
-                          rounded={'md'}
-                          _hover={{
-                            textDecoration: 'none',
-                            bg: useColorModeValue('gray.200', 'gray.700'),
-                          }}
-                        >
+                        <Text px={2} py={1}>
                           Fengh Medical
                         </Text>
                       </NextLink>
@@ -141,15 +133,7 @@ function Navbar() {
                         rel='noreferrer'
                         href={'http://www.fulbrightmed.com/'}
                       >
-                        <Text
-                          px={2}
-                          py={1}
-                          rounded={'md'}
-                          _hover={{
-                            textDecoration: 'none',
-                            bg: useColorModeValue('gray.200', 'gray.700'),
-                          }}
-                        >
+                        <Text px={2} py={1}>
                           Fulbright
                         </Text>
                       </NextLink>
@@ -160,15 +144,7 @@ function Navbar() {
                         rel='noreferrer'
                         href={'http://en.hocermed.com/'}
                       >
-                        <Text
-                          px={2}
-                          py={1}
-                          rounded={'md'}
-                          _hover={{
-                            textDecoration: 'none',
-                            bg: useColorModeValue('gray.200', 'gray.700'),
-                          }}
-                        >
+                        <Text px={2} py={1}>
                           Hocer Med
                         </Text>
                       </NextLink>
@@ -196,9 +172,6 @@ function Navbar() {
                   minW={0}
                 >
                   <Avatar size={'sm'} src={'/images/logo.jpeg'} />
-                  {/* <Avatar>
-                    <Image src={'/images/logo.jpeg'} width={80} height={80} />
-                  </Avatar> */}
                 </MenuButton>
               </Menu>
             </Flex>
@@ -275,15 +248,7 @@ function Navbar() {
                       rel='noreferrer'
                       href={'https://fenghmedical.nl/'}
                     >
-                      <Text
-                        px={2}
-                        py={1}
-                        rounded={'md'}
-                        _hover={{
-                          textDecoration: 'none',
-                          bg: 'gray.200',
-                        }}
-                      >
+                      <Text px={2} py={1}>
                         Fengh Medical
                       </Text>
                     </NextLink>
