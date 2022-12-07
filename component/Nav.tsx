@@ -68,19 +68,6 @@ function Navbar() {
                 spacing={4}
                 display={{ base: 'none', md: 'flex' }}
               >
-                <NextLink href={'/'}>
-                  <Text
-                    px={2}
-                    py={1}
-                    rounded={'md'}
-                    _hover={{
-                      textDecoration: 'none',
-                      bg: useColorModeValue('gray.200', 'gray.700'),
-                    }}
-                  >
-                    Home
-                  </Text>
-                </NextLink>
                 <NextLink href={'/about'}>
                   <Text
                     px={2}
@@ -126,48 +113,48 @@ function Navbar() {
                     Affiliates
                   </MenuButton>
                   <MenuList>
-                    <MenuItem>
-                      <NextLink
-                        target='_blank'
-                        rel='noreferrer'
-                        href={'https://fenghmedical.nl/'}
-                      >
+                    <NextLink
+                      target='_blank'
+                      rel='noreferrer'
+                      href={'https://fenghmedical.nl/'}
+                    >
+                      <MenuItem>
                         <Text px={2} py={1}>
                           Fengh Medical
                         </Text>
-                      </NextLink>
-                    </MenuItem>
-                    <MenuItem>
-                      <NextLink
-                        target='_blank'
-                        rel='noreferrer'
-                        href={'http://www.fulbrightmed.com/'}
-                      >
+                      </MenuItem>
+                    </NextLink>
+                    <NextLink
+                      target='_blank'
+                      rel='noreferrer'
+                      href={'http://www.fulbrightmed.com/'}
+                    >
+                      <MenuItem>
                         <Text px={2} py={1}>
                           Fulbright
                         </Text>
-                      </NextLink>
-                    </MenuItem>
-                    <MenuItem>
-                      <NextLink
-                        target='_blank'
-                        rel='noreferrer'
-                        href={'http://en.hocermed.com/'}
-                      >
+                      </MenuItem>
+                    </NextLink>
+                    <NextLink
+                      target='_blank'
+                      rel='noreferrer'
+                      href={'http://en.hocermed.com/'}
+                    >
+                      <MenuItem>
                         <Text px={2} py={1}>
                           Hocer Med
                         </Text>
-                      </NextLink>
-                    </MenuItem>
-                    <MenuItem>
-                      <NextLink
-                        href={'https://www.rbt.global/'}
-                        target='_blank'
-                        rel='noreferrer'
-                      >
+                      </MenuItem>
+                    </NextLink>
+                    <NextLink
+                      href={'https://www.rbt.global/'}
+                      target='_blank'
+                      rel='noreferrer'
+                    >
+                      <MenuItem>
                         <Text py={1}>Residual Barrier Technology</Text>
-                      </NextLink>
-                    </MenuItem>
+                      </MenuItem>
+                    </NextLink>
                   </MenuList>
                 </Menu>
               </HStack>
@@ -253,23 +240,23 @@ function Navbar() {
                   Affiliates
                 </MenuButton>
                 <MenuList>
-                  <MenuItem>
-                    <NextLink
-                      target='_blank'
-                      rel='noreferrer'
-                      href={'https://fenghmedical.nl/'}
-                    >
+                  <NextLink
+                    target='_blank'
+                    rel='noreferrer'
+                    href={'https://fenghmedical.nl/'}
+                  >
+                    <MenuItem>
                       <Text px={2} py={1}>
                         Fengh Medical
                       </Text>
-                    </NextLink>
-                  </MenuItem>
-                  <MenuItem>
-                    <NextLink
-                      target='_blank'
-                      rel='noreferrer'
-                      href={'http://www.fulbrightmed.com/'}
-                    >
+                    </MenuItem>
+                  </NextLink>
+                  <NextLink
+                    target='_blank'
+                    rel='noreferrer'
+                    href={'http://www.fulbrightmed.com/'}
+                  >
+                    <MenuItem>
                       <Text
                         px={2}
                         py={1}
@@ -281,14 +268,14 @@ function Navbar() {
                       >
                         Fulbright
                       </Text>
-                    </NextLink>
-                  </MenuItem>
-                  <MenuItem>
-                    <NextLink
-                      target='_blank'
-                      rel='noreferrer'
-                      href={'http://en.hocermed.com/'}
-                    >
+                    </MenuItem>
+                  </NextLink>
+                  <NextLink
+                    target='_blank'
+                    rel='noreferrer'
+                    href={'http://en.hocermed.com/'}
+                  >
+                    <MenuItem>
                       <Text
                         px={2}
                         py={1}
@@ -300,14 +287,14 @@ function Navbar() {
                       >
                         Hocer Med
                       </Text>
-                    </NextLink>
-                  </MenuItem>
-                  <MenuItem>
-                    <NextLink
-                      target='_blank'
-                      rel='noreferrer'
-                      href={'https://www.rbt.global/'}
-                    >
+                    </MenuItem>
+                  </NextLink>
+                  <NextLink
+                    target='_blank'
+                    rel='noreferrer'
+                    href={'https://www.rbt.global/'}
+                  >
+                    <MenuItem>
                       <Text
                         px={2}
                         py={1}
@@ -319,8 +306,8 @@ function Navbar() {
                       >
                         Residual Barrier Technology
                       </Text>
-                    </NextLink>
-                  </MenuItem>
+                    </MenuItem>
+                  </NextLink>
                 </MenuList>
               </Menu>
             </Stack>
