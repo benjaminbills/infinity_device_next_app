@@ -68,9 +68,19 @@ function Navbar() {
                 spacing={4}
                 display={{ base: 'none', md: 'flex' }}
               >
-                {/* {Links.map((link) => (
-                  <NavLink key={link}>{link}</NavLink>
-                ))} */}
+                <NextLink href={'/'}>
+                  <Text
+                    px={2}
+                    py={1}
+                    rounded={'md'}
+                    _hover={{
+                      textDecoration: 'none',
+                      bg: useColorModeValue('gray.200', 'gray.700'),
+                    }}
+                  >
+                    Home
+                  </Text>
+                </NextLink>
                 <NextLink href={'/about'}>
                   <Text
                     px={2}
@@ -179,7 +189,7 @@ function Navbar() {
         </Container>
 
         {isOpen ? (
-          <Box pb={4} display={{ md: 'none' }}>
+          <Box pb={4} display={{ md: 'none' }} backgroundColor={'gray.300'}>
             <Stack as={'nav'}>
               <NextLink href={'/'}>
                 <Box
@@ -237,6 +247,7 @@ function Navbar() {
                 <MenuButton
                   alignContent={'right'}
                   as={Button}
+                  backgroundColor={'gray.300'}
                   rightIcon={<ChevronDownIcon />}
                 >
                   Affiliates
