@@ -1,6 +1,7 @@
 import {
   Box,
   Button,
+  Center,
   Container,
   Image,
   ListItem,
@@ -16,6 +17,7 @@ import Link from 'next/link';
 import Products from '../Products';
 import NextImage from 'next/image';
 import { useRouter } from 'next/router';
+import ReactPlayer from 'react-player';
 import Head from 'next/head';
 
 interface ProductInterface {
@@ -26,33 +28,24 @@ interface ProductInterface {
   benefits: string[];
   images: string[];
   nomenclature: string[];
+  video: string[];
 }
 
 const SingleProduct = (pid: any) => {
   const { id } = pid;
-  // const { query } = useRouter();
-  // const router = useRouter();
-  // const { id } = router.query;
-  console.log(id);
 
-  // const { id } = useParams();
+  // console.log(id);
+
   const [product, setProduct] = useState<ProductInterface>();
   useEffect(() => {
-    console.log(typeof id);
-    console.log(Products);
-
     const getProduct = Products.filter((product) => product.id === id);
-    console.log(getProduct);
 
     setProduct(getProduct[0]);
-    // setProduct({
-    //   ...Products.filter((product) => product.id === id),
-    // });
 
     console.log(product);
   }, [id]);
   // const getProduct = Products.filter((product) => product.id === id);
-  console.log(product);
+  // console.log(product);
   return (
     <Box pb={'10'}>
       <Head>
@@ -116,6 +109,20 @@ const SingleProduct = (pid: any) => {
             {product.nomenclature.map((item, i) => (
               <Image key={i} src={item} />
             ))}
+          </Stack>
+          <Stack>
+            {product.video && (
+              <Box>
+                <Center>
+                  <Text fontSize={'xl'} as={'h2'} pb='2'>
+                    Watch the animation of the Procedure
+                  </Text>
+                </Center>
+                {product.video?.map((item, i) => (
+                  <ReactPlayer width={'100%'} key={i} url={item} />
+                ))}
+              </Box>
+            )}
           </Stack>
         </Container>
       ) : null}
