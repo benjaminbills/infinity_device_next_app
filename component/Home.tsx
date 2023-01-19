@@ -98,7 +98,7 @@ const Home = () => {
               {' '}
               Your clinical outcomes <br /> matter
             </Text>
-            <Text pb={'5'}>We`&#39;`ll journey with you everyday.</Text>
+            <Text pb={'5'}>We&#39;ll journey with you everyday.</Text>
             <Link href={'/catalog'}>
               <Button
                 rightIcon={<ArrowForwardIcon />}
