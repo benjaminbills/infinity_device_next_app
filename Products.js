@@ -300,5 +300,44 @@ const Products = [
       'https://res.cloudinary.com/dd2y96zp9/image/upload/v1660642307/InfinityDevices/CatalogImages/QuanClip/quanclip_nomeclature2_y1uv5p.png',
     ],
   },
+  {
+    id: '10',
+    title: 'Radio Frequency treatment for haemorrhoids',
+    description:
+      'F Care Systems has developed a revolutionary technique called the Rafaelo procedure. Rafaelo or RadioFrequency treatment of haemorrhoids under local anesthesia is a new approach with great clinical outcome and quick recovery',
+    features: [
+      'The tip of the HPR45i probe is inserted into- and applied onto the haemorrhoid while a radiofrequency signal, coming from the generator, is applied onto the tip.',
+      'The haemorrhoid is coagulated by means of radiofrequency induced heat which causes the haemorrhoidal tissue to shrink, and a crust is formed over the tissue. The crust will fall off automatically after some time.',
+      'Tip diameter 2 mm',
+      'Tip length 10 mm',
+      'Total probe length 210 mm',
+      'Weight 54,5 g',
+      'Coating PTFE',
+      'An anoscope is used to open the anal canal and locate the internal haemorrhoid.',
+      'Available in 2 different diameters: 96x23mm or 96x18mm (with 100mm long handle)',
+      'Light source: High intensity LED',
+      'Single use: Yes',
+      'Sterile: No',
+    ],
+    benefits: [
+      'Easy to learn and simple to perform the procedure.',
+      'An excellent alternative to more invasive techniques.',
+      'Minimal post-operative care',
+      'Quick procedure performed in day-case or outpatient setting',
+      'Quick return to daily activities',
+      'Under local anesthesia',
+      'Immediate clinical results',
+    ],
+    images: [
+      'https://res.cloudinary.com/dd2y96zp9/image/upload/v1674031451/InfinityDevices/CatalogImages/Rafaelo%20RF%20haemorrhoids/00RAFAELO_Rafaelo-generatorprobe_fwqu1i.png',
+      'https://res.cloudinary.com/dd2y96zp9/image/upload/v1674105390/InfinityDevices/CatalogImages/Rafaelo%20RF%20haemorrhoids/05HPR45iV2_HPR45i-probe_01_hhdvzk.png',
+      'https://res.cloudinary.com/dd2y96zp9/image/upload/v1674105389/InfinityDevices/CatalogImages/Rafaelo%20RF%20haemorrhoids/595-Anoscoop-300x200_qs4wsa.jpg',
+      'https://res.cloudinary.com/dd2y96zp9/image/upload/v1674105390/InfinityDevices/CatalogImages/Rafaelo%20RF%20haemorrhoids/06RAFAELOPACK_Rafaelo-Pack_01_lvrtwi.png',
+    ],
+    nomenclature: [],
+    video: [
+      'https://vimeo.com/658894574?embedded=true&source=vimeo_logo&owner=142225318',
+    ],
+  },
 ];
 export default Products;
