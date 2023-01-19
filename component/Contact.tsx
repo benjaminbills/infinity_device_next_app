@@ -28,7 +28,7 @@ type FormInterface = {
 };
 
 const Contact = () => {
-  const form = useRef<HTMLFormElement>(null);
+  const form = useRef<any>(null);
   // const email = useRef()<HTMLInputElement>(null);
   const [state, setState] = useState<FormInterface>({
     name: '',

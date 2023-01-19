@@ -38,7 +38,7 @@ const SingleProduct = (pid: any) => {
 
   const [product, setProduct] = useState<ProductInterface>();
   useEffect(() => {
-    const getProduct = Products.filter((product) => product.id === id);
+    const getProduct: any = Products.filter((product) => product.id === id);
 
     setProduct(getProduct[0]);
 

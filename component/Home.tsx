@@ -98,7 +98,7 @@ const Home = () => {
               {' '}
               Your clinical outcomes <br /> matter
             </Text>
-            <Text pb={'5'}>We'll journey with you everyday.</Text>
+            <Text pb={'5'}>We`&#39;`ll journey with you everyday.</Text>
             <Link href={'/catalog'}>
               <Button
                 rightIcon={<ArrowForwardIcon />}
@@ -464,9 +464,10 @@ const Home = () => {
               </Text>
               <Box>
                 <Text>
-                  Fenghe Innovation's "guided pre-press" uses electromechanical
-                  technology to integrate surgery into products, taking the
-                  first step towards intelligent anastomosis
+                  Fenghe Innovation&#39;s &#39;guided pre-press&#39; uses
+                  electromechanical technology to integrate surgery into
+                  products, taking the first step towards intelligent
+                  anastomosis
                 </Text>
               </Box>
               <Link href={'/product/1'}>
@@ -543,8 +544,6 @@ const Home = () => {
             </Box>
           </Box>
         </Stack>
-        {/* <Map /> */}
-        {/* <Footer /> */}
       </Container>
     </Box>
   );
