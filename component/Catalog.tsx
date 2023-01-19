@@ -3,6 +3,8 @@ import {
   Button,
   Center,
   Container,
+  Grid,
+  GridItem,
   Image,
   Stack,
   Text,
@@ -45,17 +47,15 @@ function Catalog() {
           </Center>
           <Center>
             <Box>
-              <Wrap
+              <Grid
                 pt={'5'}
-                spacing={'20px'}
-                // display={"flex"}
-                // direction={["column", "column", "row"]}
+                gap={6}
+                gridTemplateColumns={['1fr', '1fr', '1fr 1fr']}
               >
                 {Products.map((product) => (
-                  <WrapItem
+                  <GridItem
                     key={product.id}
                     overflow={'hidden'}
-                    maxW={['100%', '70em', '35em']}
                     boxShadow='base'
                   >
                     <Box display={'flex'} flexDir={'column'}>
@@ -103,7 +103,7 @@ function Catalog() {
                         </Link>
                       </Box>
                     </Box>
-                  </WrapItem>
+                  </GridItem>
                 ))}
 
                 {/* <Box
@@ -148,7 +148,7 @@ function Catalog() {
                   </Link>
                 </Box>
               </Box> */}
-              </Wrap>
+              </Grid>
             </Box>
           </Center>
           <Center pt='10'>
