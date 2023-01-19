@@ -155,6 +155,15 @@ function Navbar() {
                         <Text py={1}>Residual Barrier Technology</Text>
                       </MenuItem>
                     </NextLink>
+                    <NextLink
+                      href={'https://fcaresystems.com/'}
+                      target='_blank'
+                      rel='noreferrer'
+                    >
+                      <MenuItem>
+                        <Text py={1}>F Care Systems</Text>
+                      </MenuItem>
+                    </NextLink>
                   </MenuList>
                 </Menu>
               </HStack>
