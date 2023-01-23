@@ -66,7 +66,7 @@ const About = () => {
               <ListItem>Video Assisted Thoracoscopic Surgery (VATS).</ListItem>
               <ListItem>Bariatric Surgery and Liver Surgery.</ListItem>
               <ListItem>
-                Radio frequency operation for treatment of hemorrhoid and
+                Radio frequency ablation for treatment of hemorrhoids and
                 fistula.
               </ListItem>
             </UnorderedList>
