@@ -302,10 +302,12 @@ const Home = () => {
                 <ListItem>
                   Video Assisted Thoracoscopic Surgery (VATS).
                 </ListItem>
-                <ListItem>Bariatric Surgery and Liver Surgery.</ListItem>
+                <ListItem>Bariatric Surgery.</ListItem>
+                <ListItem>Liver Surgery.</ListItem>
                 <ListItem>
-                  Radio frequency ablation for treatment of hemorrhoids and
-                  fistula.
+                  Radio frequency ablation for treatment and diagnostic of
+                  varicose veins, spider veins, telangiectasias, hemorrhoids and
+                  fistulae.
                 </ListItem>
               </UnorderedList>
             </Box>

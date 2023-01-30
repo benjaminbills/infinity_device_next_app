@@ -329,6 +329,7 @@ const Products = [
       'Immediate clinical results',
     ],
     images: [
+      'https://res.cloudinary.com/dd2y96zp9/image/upload/v1675108445/InfinityDevices/CatalogImages/Rafaelo%20RF%20haemorrhoids/RAFAELO_Rafaelo-generatoracc.-for-Fistura-website_vmebis.png',
       'https://res.cloudinary.com/dd2y96zp9/image/upload/v1674031451/InfinityDevices/CatalogImages/Rafaelo%20RF%20haemorrhoids/00RAFAELO_Rafaelo-generatorprobe_fwqu1i.png',
       'https://res.cloudinary.com/dd2y96zp9/image/upload/v1674105390/InfinityDevices/CatalogImages/Rafaelo%20RF%20haemorrhoids/05HPR45iV2_HPR45i-probe_01_hhdvzk.png',
       'https://res.cloudinary.com/dd2y96zp9/image/upload/v1674105389/InfinityDevices/CatalogImages/Rafaelo%20RF%20haemorrhoids/595-Anoscoop-300x200_qs4wsa.jpg',
