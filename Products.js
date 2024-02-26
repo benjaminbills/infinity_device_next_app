@@ -1,3 +1,5 @@
+import { features } from "process";
+
 const Products = [
   {
     id: '1',
@@ -339,6 +341,54 @@ const Products = [
     video: [
       'https://vimeo.com/658894574?embedded=true&source=vimeo_logo&owner=142225318',
     ],
+  },
+  {
+    id: '11',
+    title: 'ArtiSential',
+    description:
+      'ArtiSential is an ergonomic surgical instrument with a multi-jointed structure, intuitively providing full range of freedom in movement.',
+    features: [
+      '360° Degrees of Freedom, Full Access to Narrow Spaces.',
+      'Intuitive Control',
+      'Lock Lever (Optional)',
+      'Three Choices in Shaft Length',
+      'Strap Size Adjustment',
+    ],
+    benefits: [
+      "ArtiSential's double-jointed End-Tool allows the user to control the instrument in all directions,achieving angles that are unreachable with conventional products, such as the 90° position.",
+      "This product's articulating advantage is essential for accessing narrow surgical sites and performing high-quality precision surgery.",
+      "ArtiSential's End-Tool moves in sync with the user's fingers and wrist, providing intuitive manipulation and easy control to the surgeon.",
+      "ArtiSential's highly flexible articulation distinguishes it from conventional straight-stick instruments.",
+      "ArtiSential offers three choices in shaft length: 25cm, 38cm, 45cm. The user can select and use different length instruments according to the surgical site, purpose or preferences.",
+      "Curved handle designed ergonomically for easy gripping for users with different hand sizes",
+    ],
+    images: [
+      'https://res.cloudinary.com/dd2y96zp9/image/upload/v1708912658/InfinityDevices/CatalogImages/ArtiSential/ArtiSential_cdwe8q.jpg',
+      'https://res.cloudinary.com/dd2y96zp9/image/upload/v1708913431/InfinityDevices/CatalogImages/ArtiSential/ArtiSential-1_ummnfp.jpg'
+    ],
+    nomenclature: [],
+    video: [
+      'https://www.youtube.com/watch?v=ICYieaR8Yq4',
+    ],
+  },
+  {
+    id: '12',
+    title: 'Ultrastop',
+    description:
+      'Ultrastop pro med. is a sterile anti-fogging agent for medical optics. Surface-active substances in a special combination form a clear and transparent film on the treated surfaces. This very thin film has the effect of preventing droplet formation and, in this way, prevents the surface from fogging up with condensed water vapour.',
+    features: [
+      'Ultrastop pro med. is also available in 5 ml single doses (Ultrastop pro med. Solution Monodose)',
+      '30 ml vial for repeated sterile withdrawal of the solution',
+    ],
+    benefits: [
+      "Ultrastop pro med. is used for strictly aseptic endoscopies that have to be carried out with sterile endoscopes in hollow organs and body cavities (e.g. laparoscopies, thoracoscopies, arthroscopies, etc.), as well as for medical examination mirrors and optics (e.g. laryngeal and epipharyngeal mirrors, stroboscopes, dental mirrors, colonoscopes, etc.).",
+    ],
+    images: [
+      'https://res.cloudinary.com/dd2y96zp9/image/upload/v1708913887/InfinityDevices/CatalogImages/Ultrastop/ultrastop_kryul6.png',
+      'https://res.cloudinary.com/dd2y96zp9/image/upload/v1708914008/InfinityDevices/CatalogImages/Ultrastop/ultrastop2_eodqji.webp'
+    ],
+    nomenclature: [],
+    video: [],
   },
 ];
 export default Products;

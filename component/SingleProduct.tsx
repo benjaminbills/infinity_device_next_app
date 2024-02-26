@@ -111,7 +111,7 @@ const SingleProduct = (pid: any) => {
             ))}
           </Stack>
           <Stack>
-            {product.video && (
+            {product.video.length>0 && (
               <Box>
                 <Center>
                   <Text fontSize={'xl'} as={'h2'} pb='2'>
