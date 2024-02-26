@@ -152,7 +152,7 @@ function Navbar() {
                       rel='noreferrer'
                     >
                       <MenuItem>
-                        <Text py={1}>Residual Barrier Technology</Text>
+                        <Text px={2} py={1}>Residual Barrier Technology</Text>
                       </MenuItem>
                     </NextLink>
                     <NextLink
@@ -161,9 +161,27 @@ function Navbar() {
                       rel='noreferrer'
                     >
                       <MenuItem>
-                        <Text py={1}>F Care Systems</Text>
+                        <Text px={2} py={1}>F Care Systems</Text>
                       </MenuItem>
                     </NextLink>
+                    <NextLink
+                      target='_blank'
+                      rel='noreferrer'
+                      href={'https://www.livsmed.com/eng/main/'}
+                    >
+                    <MenuItem>
+                      <Text px={2} py={1}>Livsmed</Text>
+                    </MenuItem>
+                  </NextLink>
+                   <NextLink
+                    target='_blank'
+                    rel='noreferrer'
+                    href={'https://sigmapharm.at/en/'}
+                  >
+                    <MenuItem>
+                      <Text px={2} py={1} >Sigmapharm</Text>
+                    </MenuItem>
+                  </NextLink>
                   </MenuList>
                 </Menu>
               </HStack>
@@ -314,6 +332,44 @@ function Navbar() {
                         }}
                       >
                         Residual Barrier Technology
+                      </Text>
+                    </MenuItem>
+                  </NextLink>
+                  <NextLink
+                    target='_blank'
+                    rel='noreferrer'
+                    href={'https://www.livsmed.com/eng/main/'}
+                  >
+                    <MenuItem>
+                      <Text
+                        px={2}
+                        py={1}
+                        rounded={'md'}
+                        _hover={{
+                          textDecoration: 'none',
+                          bg: 'gray.200',
+                        }}
+                      >
+                        Livsmed
+                      </Text>
+                    </MenuItem>
+                  </NextLink>
+                  <NextLink
+                    target='_blank'
+                    rel='noreferrer'
+                    href={'https://sigmapharm.at/en/'}
+                  >
+                    <MenuItem>
+                      <Text
+                        px={2}
+                        py={1}
+                        rounded={'md'}
+                        _hover={{
+                          textDecoration: 'none',
+                          bg: 'gray.200',
+                        }}
+                      >
+                        Sigmapharm
                       </Text>
                     </MenuItem>
                   </NextLink>
