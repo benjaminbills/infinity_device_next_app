@@ -14,6 +14,8 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import hocer from '../assets/images/hocerlogo.png';
+import Products from '../Products';
+
 // import hocer2 from '../assets/images/hocer2.jpeg';
 
 // import fengh from '/images/fengh.jpeg';
@@ -414,7 +416,7 @@ const Home = () => {
                 transition: ' 0.8s all',
               }}
             >
-              <Image src={'/images/DisposableBurstClip.png'} />
+              <Image src={Products[10].images[0]} />
             </Box>
             <Box
               pt={['2', '2', '0']}
@@ -424,17 +426,15 @@ const Home = () => {
               textAlign={['left', 'left', 'left']}
             >
               <Text fontSize={'xl'} as={'h1'}>
-                Disposable burst polymer clip applier
+                {Products[10].title}
               </Text>
               <Box>
                 <Text>
-                  Disposable single-shot polymer ligation clips and multiplex
-                  clip appliers are also provided, which can be applied to
-                  different surgical scenarios
+                  {Products[10].description}
                 </Text>
               </Box>
 
-              <Link href={'/product/9'}>
+              <Link href={'/product/11'}>
                 <Button
                   mb={['5', '5', '0']}
                   w={['40%']}
@@ -449,6 +449,7 @@ const Home = () => {
               </Link>
             </Box>
           </Box>
+          
           <Box
             display={'flex'}
             flexDir={['column-reverse', 'column-reverse', 'row']}
@@ -498,6 +499,7 @@ const Home = () => {
               <Image src={'/images/SmartPressElectric.jpeg'} />
             </Box>
           </Box>
+          
           <Box
             display={'flex'}
             flexDir={['column', 'column', 'row']}
@@ -545,6 +547,53 @@ const Home = () => {
               </Link>
             </Box>
           </Box>
+          <Box
+            display={'flex'}
+            flexDir={['column-reverse', 'column-reverse', 'row']}
+            pt={['0', '0', '10']}
+          >
+            <Box
+              pt={['2', '2', '0']}
+              display={'flex'}
+              flexDir={'column'}
+              w={['100%', '100%', '40%']}
+              textAlign={['left', 'left', 'right']}
+            >
+              <Text fontSize={'xl'} as={'h1'}>
+                {Products[9].title}
+              </Text>
+              <Box>
+                <Text>
+                  {Products[9].description}
+                </Text>
+              </Box>
+              <Link href={'/product/10'}>
+                <Button
+                  mb={['5', '5', '0']}
+                  w={['40%']}
+                  marginLeft={['none', 'none', 'auto']}
+                  mt={'5'}
+                  colorScheme='green'
+                  borderRadius={'none'}
+                  rightIcon={<ArrowForwardIcon />}
+                >
+                  Read more
+                </Button>
+              </Link>
+            </Box>
+            <Box
+              display={'flex'}
+              w={['100%', '100%', '60%']}
+              pl={['0', '0', '10']}
+              _hover={{
+                transform: 'scale(1.05)',
+                transition: ' 0.8s all',
+              }}
+            >
+              <Image src={Products[9].images[0]} />
+            </Box>
+          </Box>
+          
         </Stack>
       </Container>
     </Box>
